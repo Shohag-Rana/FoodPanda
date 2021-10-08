@@ -1,0 +1,225 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvitica";
+}
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83.33%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+ 
+.row{
+	content: '';
+	display: block;
+	clear: both;
+}
+.layout{
+	float: left;
+	margin-bottom: 5px;
+}
+.container{
+	padding: 10px 100px;
+	height: auto;
+	box-shadow: 2px 1px 3px gray;
+}
+.nav{
+	padding: 5px;
+	height: 35px;
+	background-color: white;
+
+}
+.nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.nav ul li{
+	display: inline-block;
+	position: relative;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: red;
+	display: block;
+	padding: 10px 20px;
+	letter-spacing: 1.3px;
+
+}
+ 
+.nav ul li ul{
+	padding-top: 10px;
+	display: none;
+	background-color: white;
+	box-shadow: 2px 1px 3px gray;
+	text-align: center;
+}
+
+.nav ul li:hover ul{
+	position: absolute;
+	display: block;
+
+}
+.nav ul li ul li{
+	display: block;
+}
+@keyframes myanimation{
+	0%{
+		background-image: url('../images/banner.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 580px;
+	}
+	50%{
+		background-image: url('../images/food.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 580px;
+	}
+	100%{
+		background-image: url('../images/banner2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 580px;
+	}
+}
+.banner{
+	animation-name: myanimation;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.location{
+	height: 40px;
+	padding: 15px 0px;
+	background-color: #CFCDEF;
+	position: relative;
+	bottom: -240px;
+}
+.container2{
+	padding: 0px 100px;
+	height: auto;
+	 
+}
+.text1{
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+.head1{
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 45px;
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 180px 120px 0px 120px;
+}
+.about_us{
+	padding: 150px;
+}
+.head2{
+	text-align: center;
+	color: red;
+	letter-spacing: 2.5px;
+	font-size: 45px;
+	font-weight: 100px;
+	font-family: 'MuseoModerno', cursive;
+}
+.text2{
+	text-align: center;
+	color:#383e45;
+	margin-bottom: 70px;	
+	font-family: 'Helvitica', sans-serif;
+	letter-spacing: 1.5px;
+
+}
+.box1{
+	text-align: center;
+}
+.button1{
+	background-color: #FF0066;
+	padding: 15px 65px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+.button2{
+	background-color: white;
+	padding: 15px 65px;
+	color: red;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+.carrer{
+	background-image: url('../images/rider.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 580px;
+	background-attachment: fixed;
+}
+.context{
+	padding: 190px;
+	text-align: center;
+}
+.head3{
+	color: red;
+	font-size: 45px;
+	letter-spacing: 3px;
+	margin-bottom: 25px;
+	font-family: 'MuseoModerno', cursive;
+}
+.head4{
+	color: white;
+	font-size: 45px;
+	letter-spacing: 3px;
+	margin-bottom: 25px;
+	font-family: 'MuseoModerno', cursive;
+}
+.text3{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 50px;
+	font-family: 'Lato', sans-serif;
+}
+.press{
+	background-image: url('../images/food.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 580px;
+	background-attachment: fixed;
+}
+.contact{
+	background-color: #d1083b;
+	height: 580px;
+}
+.footer{
+	padding: 45px 100px;
+
+}
+
+@media only screen and (max-width: 600px) {
+	.col-sm-6{width: 50%}
+}
+
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
